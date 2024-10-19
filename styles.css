@@ -1,0 +1,76 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Navigation Menu */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Sticky Navbar on scroll */
+.navbar.scrolled {
+    background-color: #555;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+/* For demo purpose */
+#home {
+    background-color: lightblue;
+}
+#about {
+    background-color: lightgreen;
+}
+#services {
+    background-color: lightcoral;
+}
+#contact {
+    background-color: lightpink;
+}
